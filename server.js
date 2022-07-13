@@ -6,7 +6,7 @@ const path = require('path');
 
 app.use('/public', express.static(__dirname + '/public'));
 
-app.get('/home',(req,res,next) => {
+app.get('/',(req,res,next) => {
     res.sendFile(path.join(__dirname, 'home.html'));
 })
 
